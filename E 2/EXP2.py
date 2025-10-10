@@ -1,10 +1,8 @@
 import hashlib
 
-# Function to generate SHA-256 hash
 def generate_hash(data):
     return hashlib.sha256(data.encode()).hexdigest()
 
-# Function to verify integrity
 def verify_integrity(original, new_data):
     return generate_hash(original) == generate_hash(new_data)
 
