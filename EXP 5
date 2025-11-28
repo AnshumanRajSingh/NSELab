@@ -1,0 +1,5 @@
+ssh 127.0.0.1
+service ssh start
+ssh -keygen -t rsa -b 2048
+ssh -copy-id rohinish@127.0.0.1
+ssh rohinish@127.0.0.1
